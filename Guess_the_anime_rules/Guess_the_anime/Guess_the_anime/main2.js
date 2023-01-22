@@ -1,4 +1,5 @@
 //Titres des bonnes réponses d'animes
+
 const bonAnime = ["Noragami", "Tokyo Revengers", "Black Clover", "One punch man", "Horimiya", "Hataraku Saibo", "Mahoutsukai no Yome", "Orange", "Tsukiuta", "Shokugeki no Soma"]
 const mauvaisAnime = ["Blood lad", "Bleach", "Ao no Exorcist", "Tokyo Ghoul", "Black Lagoon", "Darker Than Black", "Boku no Hero Academia", "Fairy Tale", "HunterxHunter", "Gurren Lagann", "Kill la Kill", "Mob Psycho 100", "Ao Haru Ride", "Wotakoi", "Koe no Katachi", "D-Gray Man", "Devil's Line", "Erased", "Akagami no Shirayuki-hime", "Mahouka Koukou no Rettousei", "Durarara", "Nisekoi", "Fruits Basket", "Toradora", "Idolish7", "B Project", "Uta no Prince sama", "La voie du tablier", "Chocolat no Mahou", "Bartender"]
 
@@ -118,7 +119,6 @@ function OnClick(x,y,i,n)
         {
             if (y[i].className.search(`"`) == -1)
             {
-                
                 finalUrl = `url("${y[i].className}")`
             }
             else
@@ -165,7 +165,7 @@ let bool = false
 
 //ici on affiche les regles en cliquant sur la case "Regles", on agrandit la case et on remplace le titre par les regles, on peut refermer en recliquant dessus, car tout est suivit par un ecouteur d'evenement
 
-let Content = "Met ce que tu veut ici, tu peut mettre les regles ca marche, faut juste aller a la ligne 168 de main.js et tu remplaces tout ce qui est entre guillemets (tout ce qui est ecrit ici finallement), enjoy ^^"
+let Content = "Bienvenue sur le quizz ! Pour y jouer, vous devrez cliquer sur un des 4 choix proposés puis attendre que la bonne réponse s'affiche pour découvrir le nouvel anime à deviner. Bon courage !"
 let Mem
 
 Regles.addEventListener("click", (event) => {
